@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Train Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .main-content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .feature {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature i {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+            .cta-button {
+                font-size: 16px;
+            }
+            .feature {
+                padding: 15px;
+            }
+            .feature i {
+                font-size: 24px;
+            }
+            .feature h2 {
+                font-size: 20px;
+            }
+            .feature p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Metro Train Services</h1>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <p>Welcome to our Metro Train Services landing page. Discover the convenience and efficiency of metro transportation!</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-train"></i>
+                <h2>Fast and Reliable</h2>
+                <p>Travel quickly and reliably to your destination with our metro trains.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-credit-card"></i>
+                <h2>Easy Payment</h2>
+                <p>Convenient payment options including contactless and mobile payments.</p>
+            </div>
+            <div class="feature" id="multiple-routes-feature">
+                <i class="fas fa-map-marker-alt"></i>
+                <h2>Multiple Routes</h2>
+                <p>Explore various routes and destinations across the city.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Metro Train Services</p>
+    </footer>
+
+    <script>
+        document.getElementById('multiple-routes-feature').addEventListener('click', function() {
+            window.location.href = 'route_maps.html'; // Redirect to the new page with route maps
+        });
+    </script>
+</body>
+</html>
